@@ -1,0 +1,23 @@
+1.注意配置、导包等操作
+2.
+3.action 中<action name="test_*" class="cn.itcast.test.action.TestAction" method="{1}">  访问时name可以等于test_execute.action、test_.action、test.action  不能tes.action
+4.hibernate与spring整合 
+5.
+6.事务控制 事务管理-> 事务通知-> aop配置被事务控制的类   其实就是切面编程  
+      <!-- 第一种方法 -->
+      <!-- <aop:pointcut id="serviceOperation" expression="execution(* cn.itcast..service.impl.*.*(..))"/> -->
+      <!-- 第二种方法 -->
+      <aop:pointcut id="serviceOperation" expression="bean(*Service)"/>
+      
+      头像上传（file，contentType，filename）：
+      
+  excel基础元素：
+	      工作簿
+	      工作表（属于工作簿）
+	      行（属于工作簿）
+	      单元格（属于行）
+      流程： 1.创建工作簿 2.创建工作表 3.创建行 4.创建单元格
+  Excel样式：
+                合并单元格对象（CellRangeAddress）属于工作簿；运用于工作表
+                样式是属于工作簿的，运用于单元格
+                字体属于属于工作簿的，运用于样式
